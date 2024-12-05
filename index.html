@@ -4,19 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Manipulator</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- GSAP for animations -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
     <div id="container">
-        <!-- Controls Section -->
         <div id="controls">
             <h2>Text Controls</h2>
             <textarea id="textInput" placeholder="Enter your text here">Static Text Example</textarea>
-            
-            <!-- Sliders -->
             <div class="control-group">
                 <label for="fontSize">Font Size</label>
                 <input id="fontSize" type="range" min="10" max="100" value="50">
@@ -41,8 +37,6 @@
                 <label for="backgroundColor">Background Color</label>
                 <input id="backgroundColor" type="color" value="#ffffff">
             </div>
-            
-            <!-- Animation Controls -->
             <div class="control-group">
                 <label for="animationType">Animation Type</label>
                 <select id="animationType">
@@ -52,18 +46,16 @@
                     <option value="scale">Scale</option>
                     <option value="love">Love</option>
                 </select>
-            </div>            
+            </div>
             <div class="control-group">
                 <label for="animate">Enable Animation</label>
                 <input id="animate" type="checkbox">
             </div>
         </div>
-        
-        <!-- Preview Section -->
         <div id="preview">
             <div id="textDisplay">Static Text Example</div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
