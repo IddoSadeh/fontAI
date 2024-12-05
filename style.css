@@ -1,0 +1,53 @@
+/* Reset and Basic Styling */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+/* Controls Section */
+#controls {
+    width: 300px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.control-group {
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+    height: 60px;
+    resize: none;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+/* Preview Section */
+#preview {
+    flex-grow: 1;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#textDisplay {
+    font-size: 50px;
+    color: #000000;
+    transform: scale(1) rotate(0deg);
+    transition: all 0.3s ease;
+}

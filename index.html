@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Manipulator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <!-- Controls Section -->
+        <div id="controls">
+            <h2>Text Controls</h2>
+            <textarea id="textInput" placeholder="Enter your text here">Static Text Example</textarea>
+            
+            <!-- Sliders -->
+            <div class="control-group">
+                <label for="fontSize">Font Size</label>
+                <input id="fontSize" type="range" min="10" max="100" value="50">
+            </div>
+            <div class="control-group">
+                <label for="rotate">Rotation (deg)</label>
+                <input id="rotate" type="range" min="-180" max="180" value="0">
+            </div>
+            <div class="control-group">
+                <label for="xScale">X Scale</label>
+                <input id="xScale" type="range" min="0.5" max="3" step="0.1" value="1">
+            </div>
+            <div class="control-group">
+                <label for="yScale">Y Scale</label>
+                <input id="yScale" type="range" min="0.5" max="3" step="0.1" value="1">
+            </div>
+            <div class="control-group">
+                <label for="textColor">Text Color</label>
+                <input id="textColor" type="color" value="#000000">
+            </div>
+            <div class="control-group">
+                <label for="backgroundColor">Background Color</label>
+                <input id="backgroundColor" type="color" value="#ffffff">
+            </div>
+            
+            <!-- Animation Controls -->
+            <div class="control-group">
+                <label for="animationType">Animation Type</label>
+                <select id="animationType">
+                    <option value="none">None</option>
+                    <option value="rotate">Rotate</option>
+                    <option value="bounce">Bounce</option>
+                    <option value="scale">Scale</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="animate">Enable Animation</label>
+                <input id="animate" type="checkbox">
+            </div>
+        </div>
+        
+        <!-- Preview Section -->
+        <div id="preview">
+            <div id="textDisplay">Static Text Example</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
