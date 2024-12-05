@@ -20,10 +20,6 @@ html, body {
     box-sizing: border-box;
 }
 
-.control-group {
-    margin-bottom: 15px;
-}
-
 textarea {
     width: 100%;
     height: 60px;
@@ -45,7 +41,7 @@ textarea {
 #textDisplay {
     font-size: 50px;
     color: #000000;
-    transform: scale(1) rotate(0deg);
+    transform: scale(1);
     transition: all 0.3s ease;
 }
 
@@ -88,5 +84,25 @@ textarea {
     100% {
         transform: translateY(-200px) scale(0.5);
         opacity: 0;
+    }
+}
+
+.static-text {
+    position: absolute;
+    color: rgba(255, 0, 0, 0.1);
+    font-family: "Creepster", cursive;
+    font-size: 3rem;
+    pointer-events: none;
+    animation: fadeStatic 2s infinite ease-in-out;
+}
+
+@keyframes fadeStatic {
+    0%, 100% {
+        opacity: 0.1;
+        transform: rotate(0deg);
+    }
+    50% {
+        opacity: 0.4;
+        transform: rotate(10deg);
     }
 }
